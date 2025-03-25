@@ -14,15 +14,37 @@
             width: 600px;
             /* 표통째로 가운데 정열 */
             margin: auto;
+            /* 테두리선사이여백설정 */
+            border-spacing: 10px;
+            /* 테두선 중복 제거 */
+            border-collapse: collapse;
+            background: #ffcc00;
         }
         td{
             border: 1px solid black;
             /* 글자를 정열 */
             text-align: center;
+            /* 안쪽여백 주기 */
+            padding: 20px;
+            width: 200px;
         }
         caption{
             text-align: left;
+            color: red;
         }
+        .col1{
+            width: 100px;
+        }
+        .col2 .col3{
+            width: 250px;
+        }
+        .row1{
+            background: #ffcc01;
+        }
+        .row2{
+            background: #cdff00;
+        }
+        .col3{background: #00ccff;}
     </style>
 </head>
 <body>
@@ -32,21 +54,21 @@
          <!-- 표에 대한 설문 -->
         <caption>*주간시간표 테이블</caption>
          <!-- 표안에 하나의 행 -->
-        <tr>
+        <tr class="row1">
             <!-- 하나의 행안에서 열 -->
-            <td>1교시</td>
-            <td>2교시</td>
-            <td>3교시</td>
+            <td class="col1">1교시</td>
+            <td class="col2">2교시</td>
+            <td class="col3">3교시</td>
         </tr>
-        <tr>
+        <tr class="row2">
             <td>포토샵</td>
             <td>HTML</td>
-            <td>JQUERY</td>
+            <td class="col3">JQUERY</td>
         </tr>
-        <tr>
+        <tr class="row2">
             <td>일러스트</td>
             <td>CSS</td>
-            <td>포트폴리오</td>
+            <td class="col3">포트폴리오</td>
         </tr>
      </table>
 </body>

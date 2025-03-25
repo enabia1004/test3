@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>표만들기</title>
     <style>
-       h1{
-            text-align: center;
-        }
         table{
-            /* 테두리선 삽입 */
             border: 1px solid black;
             width: 600px;
-            /* 표통째로 가운데 정열 */
             margin: auto;
+            border-collapse: collapse;
         }
         td{
             border: 1px solid black;
@@ -22,6 +18,22 @@
         }
         caption{
             text-align: left;
+            color: red;
+        }
+        td{
+            width: 200px;height: 32px;
+        }
+        .new1{
+            background: #ffcc01;
+        }
+        .new2{
+            background: #e4e4e4;
+        }
+        .new3{
+            background: #00ccff;
+        }
+        .han1{
+            background: #f2f2f2;
         }
     </style>
 </head>
@@ -30,47 +42,45 @@
      <table>
          <!-- 표에 대한 설문 -->
         <caption>학기별 성적표 테이블</caption>
-         <!-- 표안에 하나의 행 -->
         <tr>
-            <!-- 하나의 행안에서 열 -->
-            <td>학기</td>
-            <td>1 학기</td>
-            <td>2 학기</td>
+            <td class="new1">학기</td>
+            <td class="new1">1 학기</td>
+            <td class="new1">2 학기</td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="new2">점수</td>
+            <td class="new2"></td>
+            <td class="new2"></td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="han1">점수</td>
+            <td class="han1"></td>
+            <td class="han1"></td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="new2">점수</td>
+            <td class="new2"></td>
+            <td class="new2"></td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="han1">점수</td>
+            <td class="han1"></td>
+            <td class="han1"></td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="new2">점수</td>
+            <td class="new2"></td>
+            <td class="new2"></td>
         </tr>
         <tr>
-            <td>점수</td>
-            <td></td>
-            <td></td>
+            <td class="han1">점수</td>
+            <td class="han1"></td>
+            <td class="han1"></td>
         </tr>
         <tr>
-            <td>합계</td>
-            <td></td>
-            <td></td>
+            <td class="new3">합계</td>
+            <td class="new3"></td>
+            <td class="new3"></td>
         </tr>
      </table>
 </body>
