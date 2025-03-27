@@ -31,31 +31,28 @@
         .col2{
             text-align: left;
         }
-
-        .new{
-            width: 76px;
-        }
-        .new2{
-            width: 109px;
-        }
-        .new3{
-            width: 92px;
-        }
-        .new4{
-            width: 76px;
+        col{
+            height: 40px;
         }
     </style>
 </head>
 <body>
     <em><h1>NOTICE</h1></em> <br>
     <table>
-        <thead>
+        <colgroup>
+            <col width="75">
+            <col width="">
+            <col width="109">
+            <col width="109">
+            <col width="76">
+            <col width="76">
+        </colgroup>
             <tr>
-               <th class="new">번호</th>
+               <th>번호</th>
                <th>제목</th>
-               <th class="new2">작성자</th>
-               <th class="new3">작성일</th>
-               <th class="new4">조회수</th>
+               <th>작성자</th>
+               <th>작성일</th>
+               <th>조회수</th>
             </tr>
           </thead>
           <tbody>
