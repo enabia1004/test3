@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품주문서</title>
+    <style>
+    fieldset{
+        border: 2px solid #d7ad3d;
+        margin-bottom: 23px;
+    }
+    legend{
+        color:  #d7ad3d;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    ul li{
+        padding: 10px;
+        background: #eeeeee;
+    }
+    .button{
+        width: 63px;
+        height: 25px;
+        background: #000;
+        color: #eeeeee;
+    }
+    </style>
+</head>
+<body>
+    <h1>상품주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">이름</label>
+                     <input type="text" name="" id="id" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="email">주소</label>
+                    <input type="email" name="" id="email">
+                </li>
+                <li>
+                    <label for="phone">전화번호</label>
+                    <select name="phone_prefix" id="phone_prefix">
+                        <option value="">011</option>
+                        <option value="">016</option>
+                        <option value="">017</option>
+                        <option value="">018</option>
+                        <option value="">019</option>
+                    </select>
+                    <input type="text" name="" id="phone"> <input type="text" name="" id="phone">
+                </li>
+                <li>
+                    <label for="sh">메모</label>
+                    <textarea name="" id="sh" cols="40" rows="2" placeholder="여기에 메모를 입력하세요"></textarea>
+                </li>
+            </ul>
+        </fieldset>  
+        <fieldset> 
+             <legend>주문 정보</legend>
+            <ul>  
+                <li>
+                    <label for="ur">과태말라 안티구아 (100g)</label>
+                    <input type="number" name="" id="ur" min="0"> 개
+                </li>
+                <li>
+                    <label for="no">인도네시아 만델링 (100g)</label>
+                    <input type="number" name="" id="no" min="0"> 개
+                </li>
+                <li>
+                    <label for="tel">탐라는도다 (블렌딩) (100g)</label>
+                    <input type="number" name="" id="tel" min="0"> 개
+                </li>
+                <li>
+                    <label for="in">01</label><input type="checkbox" name="" id="in">
+                    <label for="out">02</label><input type="checkbox" name="" id="out">
+                    <label for="in">03</label><input type="checkbox" name="" id="in">
+                    <label for="out">04</label><input type="checkbox" name="" id="out">
+                </li>
+                <li>
+                    <label for="in">01</label><input type="radio" name="cut" id="in">
+                    <label for="out">02</label><input type="radio" name="cut" id="out">
+                    <label for="in">03</label><input type="radio" name="cut" id="in">
+                    <label for="out">04</label><input type="radio" name="cut" id="out">
+                </li>
+            </ul>
+            </fieldset>
+
+        <fieldset>
+            <legend>버튼모음</legend> 
+            <input type="submit" value="주문하기" class="button" >
+        </fieldset>
+    </form>
+</body>
+</html>
