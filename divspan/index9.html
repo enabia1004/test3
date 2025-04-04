@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .box{
+          width: 1200px;
+          height: 305px;
+          border: 5px solid;
+          margin: auto;
+        }
+        .box .box1{
+            width: 385px;
+            height: 305px;
+            float: left;
+            margin-right: 22px;
+            background: #ffff00;
+        }
+        .box .box2{
+            width: 385px;
+            height: 305px;
+            float: left;
+            margin-right: 22px;
+            background: #ffff00;
+        }
+        .box .box3{
+            width: 385px;
+            height: 305px;
+            float: left;
+            background: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+    </div>
+</body>
+</html>
